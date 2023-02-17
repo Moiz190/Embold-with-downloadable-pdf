@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/overview.css">
+    <title>Campaign Performance</title>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+        <button id="dl-pdf"
+        class="position-absolute p-2 border-0 bg-pink text-white rounded-2 top-0 end-0" style="z-index: 500">
+           download
+       </button>
+    <div class="position-relative">
+        <div class="campaign-content" id="invoice">
+            <div class="bg-lightgray rounded-4 p-5 position-relative">
+                <div id="overview-heading-section" class="w-50 bg-pink text-white position-absolute campaign-heading text-center py-3 "><h3 class="fw-normal fs-2">Campaign Performance</h3></div>
+                    <div class="performance-grid">
+                    <div class="row pt-2">   
+                        <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/likes.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="fw-semibold my-1">Total likes</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/comments.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="fw-semibold my-1">Total Comments</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/Dms.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="fw-semibold my-1">Total DMs</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/saved.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class=" fw-semibold my-1">Saved</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/impression.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="my-1 fw-semibold">Total Impressions</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/reach.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="my-1 fw-semibold">Total Reach</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/engagement.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="my-1 fw-semibold">Total Engagements</h5>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/cpe.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="my-1 fw-semibold">CPE</h6>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-4">
+                                <div class="d-flex align-items-center py-4 bg-white rounded">
+                                    <div class="col-4 max-w-25 ps-3">
+                                        <img src="assets/img/cpm.png" />
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h6 class="my-1 fw-semibold">CPM</h5>
+                                        <span class="text-pink fs-5 fw-semibold">15400</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <span class="fw-bold text-pink ps-2">
+                    3
+                </span>
+                <div class="logo">
+                    <img src="assets/img/Logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

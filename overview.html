@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/overview.css">
+    <title>Campaign overview</title>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+</head>
+<body>
+    <button id="dl-pdf"
+     class="position-absolute p-2 border-0 bg-pink text-white rounded-2 top-0 end-0" style="z-index: 500">
+        download
+    </button>
+    <div class="position-relative">
+        <div class="campaign-content" id="invoice">
+            <div class="bg-lightgray rounded-4 p-5 position-relative">
+                <div id="overview-heading-section" class="w-50 bg-pink text-white position-absolute campaign-heading text-center py-3 "><h3 class="fw-normal fs-2">Campaign overview</h3></div>
+                    <div class="d-flex align mb-2 align-items-center justify-content-center pt-5">
+                        <div class="w-3"><img src="assets/img/insta.png"></div>
+                        <span class="text-pink fw-semibold fs-3 mx-1">Instagram</span>
+                    </div>
+                    <!-- grid-container  -->
+                <div class="overview-grid">
+                    <div class="row p-3 overview-section-grid">
+                    
+                        <div class="col-4 px-4 px-lg-3">
+                            <div class="d-flex align-items-center rounded-3 py-4 bg-white">
+                                <div class="col-4 col-xl-5 px-3">
+                                    <div class="ps-1 campaign-section-images mw-1 w-100"><img src="assets/img/influencer-icon.png"></div>
+                                </div>
+                                <div class="col ps-3 ps-xl-0">
+                                    <h6 class="fw-semibold my-1 overview-font-size">Total Influencers</h5>
+                                    <span class="fs-3 text-pink fw-semibold">12</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 px-4 px-lg-3">
+                            <div class="d-flex align-items-center py-4 bg-white rounded-3">
+                                <div class="col-4 col-xl-5 px-3">
+                                    <div class="ps-1 campaign-section-images mw-1 w-100"><img src="assets/img/follower-icon.png"></div>
+                                    </div>
+                                <div class="col ps-3 ps-xl-0 campaign-overview-cards-text ">
+                                    <h6 class="fw-semibold my-1 overview-font-size">Total Followers</h6>
+                                    <span class=" fs-3 text-pink fw-semibold">2300</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 px-4 px-lg-3">
+                            <div class="d-flex align-items-center py-4 bg-white rounded-3">
+                                <div class="col-4 col-xl-5 px-3">
+                                    <div class="ps-1 mw-1 campaign-section-images w-100"><img src="assets/img/rate.png"></div>
+                                </div>
+                                <div class="col ps-3 ps-xl-0">
+                                    <h6 class="fw-semibold my-1 overview-font-size">Avg Engagement Rate</h6>
+                                    <span class=" fs-3 text-pink fw-semibold">%3.2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 px-4 px-lg-3">
+                            <div class="d-flex align-items-center py-4 bg-white rounded-3">
+                                <div class="col-4 col-xl-5 px-3">
+                                    <div class="ps-1 mw-1 campaign-section-images w-100"><img src="assets/img/budget.png"></div>
+                                </div>
+                                <div class="col ps-3 ps-xl-0">
+                                    <h6 class="fw-semibold overview-font-size my-1">Total Budget</h6>
+                                    <span class=" fs-3 text-pink fw-semibold">$2000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 px-4 px-lg-3">
+                            <div class="d-flex align-items-center py-4 bg-white rounded-3">
+                                <div class="col-4 col-xl-5 px-3">
+                                    <div class="ps-1 campaign-section-images mw-1 w-100"><img src="assets/img/money.png"></div>
+                                </div>
+                                <div class="col ps-3 ps-xl-0">
+                                    <h6 class="fw-semibold overview-font-size my-1">Total Spent</h6>
+                                    <span class=" fs-3 text-pink fw-semibold">$1800</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 px-4 px-lg-3">
+                            <div class="py-4 d-flex bg-white rounded-3">
+                                <div class="col-4 col-xl-5 px-3">
+                                    <div class="ps-1 mw-1 campaign-section-images w-100"><img src="assets/img/deliverables.png"></div>
+                                </div>
+                                <div class="col ps-3 ps-xl-0">
+                                    <div>
+                                        <h6 class="fw-semibold overview-font-size">All deliverables</h6>
+                                    </div>
+
+                                    <div class="w-95 overview-text-size d-flex justify-content-between text-pink">
+                                        <div class="d-flex flex-column overview-section-line-height">
+                                            <span>1 Post</span>
+                                                    <span>1 Carousel</span>
+                                                    <span>1 IG Video</span>
+                                            </div>
+                                            <div class="d-flex flex-column overview-section-line-height">
+                                                    <span>2 Reels</span>
+                                                    <span>2 story</span>
+                                                    <span>2 Video</span>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <span class="fw-bold text-pink ps-2">
+                    2
+                </span>
+                <div class="logo">
+                    <img src="assets/img/Logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

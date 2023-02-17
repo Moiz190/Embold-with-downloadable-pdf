@@ -1,0 +1,209 @@
+    /* utilities */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font-family/Quicksand-Medium.ttf') format('truetype'),
+    url('../font-family/Quicksand-Regular.ttf') format('truetype');
+}
+body{
+    font-family: 'Quicksand';
+    height: 100vh;
+}
+img{
+    width: 100%;
+}
+        /* background */
+.bg-lightgray{
+    background-color: #F0F0F0;
+}
+.bg-pink{
+    background-color: #FF6F58;
+}
+.text-pink{
+    color: #FF6F58;
+}
+        /* Heading  */
+.campaign-heading{
+    border-radius: 0.5rem;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 30%);
+}
+.top-influencer-heading{
+    min-width: 650px;
+}
+   /* width  */
+.w-20{
+    width: 20%;
+}
+.w-55{
+    width: 55%;
+}
+.w-29{
+    width: 29%;
+}
+.w-95{
+    width: 95%;
+}
+.max-w-25{
+    max-width: 25%;
+}
+.max-w-80{
+    max-width: 80%;
+}
+.min-w-70{
+    min-width: 70%;
+}
+.max-w-90{
+    max-width: 90%;
+}
+.max-w-95{
+    max-width: 95%;
+}
+    /* line-height */
+.overview-section-line-height{
+    line-height: 2.5rem;
+}
+.audience-targeted-line-height{
+    line-height: 2.1rem;
+}
+    /* font  */
+.overview-text-size, .your-influencer-font-size{
+    font-size: 0.9rem;
+}
+.overview-font-size ,.top-influencer-description-size{
+    font-size: 0.8rem;
+}
+.audience-targeted-font-size{
+    font-size: 1.1rem;
+}
+.audience-targeted-text-size{
+    font-size: 0.7rem;
+}
+.top-influencer-text-size{
+    font-size: 0.95rem;
+}
+.table-heading-text-size{
+    font-size: 0.87rem;
+}
+    /* logo  */
+.logo{
+    width: 10%;
+}
+    /* landing-page */
+.wilder-logo-section{
+    width: 50%;
+    top: 35%;
+    left: 10%;
+}
+.wilder-logo-section::before{
+    content: "";
+    color: #ff6f58;
+    border-top: 2px solid #ffffff;
+    width: 40%;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -10%;  
+}
+.fit-content{
+    max-width: fit-content;
+}
+.visit-now-btn{
+    color: #ffffff;
+    background-color: #ff6f58;
+}
+.overview-grid .row > div, .performance-grid .row > div {
+    margin: 0.5rem 0;
+    padding: 0.2rem 1.2rem;
+}
+.campaign-content, .performing-influencers-container,.table-container{
+    padding: 5rem 4rem;
+    max-width: 1800px;
+    margin: auto;
+}
+    /* your-influencers */
+.d-grid{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.your-influencer-item{
+    grid-row:1/3;
+}
+    /* audience-targeted */
+.audience-targeted-item{
+    grid-column: 3/3;
+    grid-row:1/3;
+}
+.performing-influencers-content-container{
+    padding: 5rem 2rem;
+}
+    /* breakdown-by-content */
+.campaign-table-heading{
+    border-radius: 0.5rem;
+    box-shadow: 12px 12px 42px rgba(0, 0, 0, 0.16);
+}
+.table th{
+    background-color: #FFEEE4;
+    color: #FF6F58;
+    padding: 1.2rem 0.4rem;
+    border:0;
+}
+.table th:nth-last-of-type(1){
+    border-radius: 0 13px 13px 0;
+}
+.table th:nth-of-type(1){
+    border-radius:  13px 0 0 13px ;
+    text-align: right;
+}
+.table tr td{
+    padding: 1.2rem;
+}
+.table tr td:nth-of-type(1){
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+    /* Media-Quiries  */
+@media (min-width:1200px){
+    .user-picture{
+        width: 45%;
+    }
+    .big-orange-block{
+        max-width: 50%;
+    }
+    .wilder-logo{
+        width: 15%;
+    }
+}
+@media (min-width:1600px){
+    .width-95{
+        width: 70%;
+    }
+    .overview-font-size{
+        font-size: 1.3rem;
+    }
+    .overview-section-line-height{
+        line-height: 3rem;
+    }
+    .campaign-section-images{
+        margin: auto;
+        max-width: 70%; 
+    }
+    .your-influencer-font-size,.top-influencer-text-size{
+        font-size: 1.1rem;
+    }
+    .influencer-line-height{
+        line-height: 2.8rem;
+    }
+    .your-influencer-text-size,.audience-targeted-font-size ,.audience-targeted-text-size{
+        font-size: 1.4rem;
+    }
+    .audience-targeted-line-height{
+        line-height: 3.3rem;
+    }
+}
